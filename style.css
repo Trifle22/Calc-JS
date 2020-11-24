@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 320px;
+  border: 1px solid black;
+}
+.expression {
+  width: 90%;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+}
+
+.expression button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.expression button:hover {
+  background-color: black;
+  color: white;
+}
+
+.expression input {
+  border: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  flex-basis: 80%;
+  height: 30px;
+}
+
+.keyboard {
+  width: 90%;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.key, .score {
+  flex-basis: 20%;
+  height: 40%;
+  margin: 5px;
+  background-color: transparent;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.key:hover, .score:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+@media (max-width: 992px) {
+  .calc {
+    height: 100%;
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .calc {
+    height: 100%;
+    width: 60%;
+  }
+  .expression {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .expression button {
+    margin-bottom: 10px;
+  }
+}
