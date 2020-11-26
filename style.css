@@ -1,78 +1,134 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .calc {
+  background-color: #212121;
   margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30%;
   height: 320px;
-  border: 1px solid black;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  -webkit-box-shadow: 15px 22px 8px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 15px 22px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .expression {
   width: 90%;
   max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 5px;
   margin: 5px;
 }
 
 .expression button {
   border: none;
-  background: transparent;
+  background: Chocolate;
+  border: 1px solid DimGrey;
   cursor: pointer;
-  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   outline: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-radius: 7px;
+
 }
 .expression button:hover {
-  background-color: black;
-  color: white;
+  background-color: transparent;
+  color: chocolate;
 }
 
 .expression input {
-  border: 1px solid black;
-  background-color: transparent;
+  background-color: DimGrey;
+  border: none;
   outline: none;
-  flex-basis: 80%;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
   height: 30px;
+  border-radius: 7px;
+  color: chocolate;
+
 }
 
 .keyboard {
   width: 90%;
   padding: 5px;
   margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
 }
 .key, .score {
-  flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   height: 40%;
   margin: 5px;
-  background-color: transparent;
-  border: 1px solid black;
+  background-color: Chocolate	;
+  border: 1px solid DimGrey;
   outline: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .key:hover, .score:hover {
-  background-color: black;
-  color: white;
+  background-color: transparent;
+  color: chocolate;
 }
 
 
@@ -90,9 +146,16 @@ body {
   }
   .expression {
     max-width: 100%;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .expression button {
     margin-bottom: 10px;
